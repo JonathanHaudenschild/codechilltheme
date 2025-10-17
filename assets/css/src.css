@@ -1553,4 +1553,10 @@ body.resizing * {
   .command-line {
     padding-left: 0 !important;
   }
+  
+  /* Add top margin to logo terminal on mobile for better spacing */
+  #logoTerminal {
+    margin-top: 24px !important;
+    top: calc(50vh - 200px + 24px) !important;
+  }
 }
