@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output (optional - you might want to include this)
+assets/build/
+
+# Development files
+.DS_Store
+*.log
+npm-debug.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Distribution files
+dist/
+
+# Environment files
+.env
+.env.local

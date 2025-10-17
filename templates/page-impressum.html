@@ -1,0 +1,76 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- Impressum Page -->
+<!-- wp:group {"className":"min-h-screen bg-slate-950 p-8"} -->
+<div class="wp-block-group min-h-screen bg-slate-950 p-8" style="background-color: #0f172a !important;">
+  <div class="max-w-4xl mx-auto">
+    
+    <!-- Terminal-Style Impressum -->
+    <div class="terminal-window macos-style rounded-xl shadow-2xl backdrop-blur-xl border mx-auto max-w-3xl">
+      <!-- Terminal Header -->
+      <div class="terminal-header flex items-center justify-between p-4 border-b">
+        <div class="terminal-controls flex space-x-2">
+          <div class="control-dot close-dot"></div>
+          <div class="control-dot minimize-dot"></div>
+          <div class="control-dot maximize-dot"></div>
+        </div>
+        <div class="terminal-title font-mono text-sm opacity-80">
+          Legal Information
+        </div>
+        <div class="w-16"></div>
+      </div>
+      
+      <!-- Terminal Content -->
+      <div class="terminal-content p-6 font-mono text-sm space-y-4">
+        <div class="command-line flex items-center space-x-2 mb-4">
+          <span class="prompt text-cyan-400">developer@codechillclub:~$</span>
+          <span class="command text-white">cat impressum.txt</span>
+        </div>
+        
+        <div class="output space-y-4 text-gray-300">
+          <h1 class="text-xl text-white font-bold">📄 Impressum / Legal Notice</h1>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">🏢 Organization Information</h2>
+            <p><strong>Name:</strong> CodeAndChill Club</p>
+            <p><strong>Type:</strong> Community Meetup Group</p>
+            <p><strong>Location:</strong> Germany</p>
+            <p><strong>Platform:</strong> Meetup.com</p>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">📞 Contact</h2>
+            <p><strong>Meetup Group:</strong> <a href="https://www.meetup.com/de-DE/CodeAndChillClub/" class="text-yellow-400 hover:underline">CodeAndChill Club</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/CodeAndChillClub" class="text-yellow-400 hover:underline">@CodeAndChillClub</a></p>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">⚖️ Legal Framework</h2>
+            <p>This is a community website for a German Meetup group. We operate under German law (TMG - Telemediengesetz).</p>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">🛡️ Disclaimer</h2>
+            <p>This community website is provided as-is for informational purposes. External links are provided for convenience and we are not responsible for their content.</p>
+          </div>
+          
+          <div class="mt-6 pt-4 border-t border-gray-600">
+            <p class="text-sm text-gray-400">Last updated: <span class="text-cyan-400">${new Date().toLocaleDateString()}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to Home Button -->
+    <div class="text-center mt-8">
+      <a href="/" class="inline-flex items-center space-x-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg transition-colors">
+        <span>←</span>
+        <span>Back to Terminal</span>
+      </a>
+    </div>
+    
+  </div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

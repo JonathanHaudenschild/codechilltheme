@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#00d2ef" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#ff0080" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#ffed00" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <g filter="url(#glow)" font-family="'JetBrains Mono', 'Fira Code', 'Menlo', monospace" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+    <text x="22" y="32" font-size="30" fill="#00d2ef">(</text>
+    <text x="32" y="32" font-size="30" fill="#ff0080">[</text>
+    <text x="42" y="32" font-size="30" fill="#ffed00">{</text>
+  </g>
+</svg>

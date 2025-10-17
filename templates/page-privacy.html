@@ -1,0 +1,102 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- Privacy Policy Page -->
+<!-- wp:group {"className":"min-h-screen bg-slate-950 p-8"} -->
+<div class="wp-block-group min-h-screen bg-slate-950 p-8" style="background-color: #0f172a !important;">
+  <div class="max-w-4xl mx-auto">
+    
+    <!-- Terminal-Style Privacy Policy -->
+    <div class="terminal-window macos-style rounded-xl shadow-2xl backdrop-blur-xl border mx-auto max-w-3xl">
+      <!-- Terminal Header -->
+      <div class="terminal-header flex items-center justify-between p-4 border-b">
+        <div class="terminal-controls flex space-x-2">
+          <div class="control-dot close-dot"></div>
+          <div class="control-dot minimize-dot"></div>
+          <div class="control-dot maximize-dot"></div>
+        </div>
+        <div class="terminal-title font-mono text-sm opacity-80">
+          Privacy Policy
+        </div>
+        <div class="w-16"></div>
+      </div>
+      
+      <!-- Terminal Content -->
+      <div class="terminal-content p-6 font-mono text-sm space-y-4">
+        <div class="command-line flex items-center space-x-2 mb-4">
+          <span class="prompt text-cyan-400">developer@codechillclub:~$</span>
+          <span class="command text-white">cat privacy-policy.txt</span>
+        </div>
+        
+        <div class="output space-y-4 text-gray-300">
+          <h1 class="text-xl text-white font-bold">🔒 Privacy Policy</h1>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">📊 Data Collection</h2>
+            <p>This community website collects minimal data:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Basic website analytics (anonymous)</li>
+              <li>No personal information is stored on this website</li>
+              <li>No cookies for tracking purposes</li>
+            </ul>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">🔗 External Services</h2>
+            <p>We link to external platforms:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li><strong>Meetup.com:</strong> Event organization and member management</li>
+              <li><strong>GitHub.com:</strong> Code repositories and project collaboration</li>
+              <li><strong>YouTube:</strong> Embedded videos (may set cookies)</li>
+            </ul>
+            <p class="text-sm">Each platform has its own privacy policy which applies when you visit their sites.</p>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">🍪 Cookies</h2>
+            <p>This website uses minimal cookies:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Essential cookies for website functionality</li>
+              <li>No advertising or tracking cookies</li>
+              <li>Third-party cookies may be set by embedded content</li>
+            </ul>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">📧 Contact & Data Rights</h2>
+            <p>For privacy-related questions, contact us through:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Our <a href="https://www.meetup.com/de-DE/CodeAndChillClub/" class="text-yellow-400 hover:underline">Meetup group</a></li>
+              <li>GitHub: <a href="https://github.com/CodeAndChillClub" class="text-yellow-400 hover:underline">@CodeAndChillClub</a></li>
+            </ul>
+          </div>
+          
+          <div class="space-y-3">
+            <h2 class="text-lg text-cyan-400">🌍 GDPR Compliance</h2>
+            <p>As a German community group, we respect GDPR requirements:</p>
+            <ul class="list-disc list-inside space-y-1 ml-4">
+              <li>Minimal data collection principle</li>
+              <li>No personal data processing without consent</li>
+              <li>Right to access, rectify, or delete your data</li>
+            </ul>
+          </div>
+          
+          <div class="mt-6 pt-4 border-t border-gray-600">
+            <p class="text-sm text-gray-400">Last updated: <span class="text-cyan-400">${new Date().toLocaleDateString()}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Back to Home Button -->
+    <div class="text-center mt-8">
+      <a href="/" class="inline-flex items-center space-x-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-lg transition-colors">
+        <span>←</span>
+        <span>Back to Terminal</span>
+      </a>
+    </div>
+    
+  </div>
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
