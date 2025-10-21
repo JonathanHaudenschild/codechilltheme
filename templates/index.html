@@ -490,28 +490,28 @@
                 </div>
                 <div class="output pl-6 space-y-3 text-gray-300">
                   <h3 class="text-cyan-400 font-bold">🔒 Privacy Policy</h3>
-                  
+
                   <div class="space-y-2">
                     <h4 class="text-yellow-400">📊 Data Collection</h4>
                     <p class="text-sm">• Minimal analytics (anonymous)</p>
                     <p class="text-sm">• No personal info stored</p>
                     <p class="text-sm">• No tracking cookies</p>
                   </div>
-                  
+
                   <div class="space-y-2">
                     <h4 class="text-yellow-400">🔗 External Services</h4>
                     <p class="text-sm">• Meetup.com (events, members)</p>
                     <p class="text-sm">• GitHub.com (repositories)</p>
                     <p class="text-sm">• YouTube (embedded videos)</p>
                   </div>
-                  
+
                   <div class="space-y-2">
                     <h4 class="text-yellow-400">🍪 Cookies</h4>
                     <p class="text-sm">• Essential cookies only</p>
                     <p class="text-sm">• No advertising/tracking</p>
                     <p class="text-sm">• Third-party: From embeds</p>
                   </div>
-                  
+
                   <div class="space-y-2">
                     <h4 class="text-yellow-400">🌍 GDPR</h4>
                     <p class="text-sm">• Minimal data principle</p>
@@ -520,7 +520,44 @@
                   </div>
                 </div>
               </div>
-              
+
+              <!-- Resize corner -->
+              <div class="resize-corner"></div>
+            </div>
+
+            <!-- Events Terminal -->
+            <div
+              class="terminal-window macos-style rounded-xl shadow-2xl backdrop-blur-xl border transition-all duration-500 fixed draggable-window"
+              id="eventsTerminal"
+              style="z-index: 998;"
+            >
+              <!-- Terminal Header -->
+              <div
+                class="terminal-header flex items-center justify-between p-4 border-b cursor-move drag-handle"
+              >
+                <div class="terminal-controls flex space-x-2">
+                  <div class="control-dot close-dot cursor-pointer hover:scale-110 transition-transform"></div>
+                  <div class="control-dot minimize-dot cursor-pointer hover:scale-110 transition-transform"></div>
+                  <div class="control-dot maximize-dot cursor-pointer hover:scale-110 transition-transform"></div>
+                </div>
+                <div class="terminal-title font-mono text-sm opacity-80">
+                  Upcoming Events
+                </div>
+                <div class="w-16"></div>
+              </div>
+              <!-- Terminal Content -->
+              <div class="terminal-content p-4 font-mono text-sm space-y-3 h-full overflow-auto">
+                <div class="command-line flex items-center space-x-2">
+                  <span class="prompt">developer@codechillclub:~$</span>
+                  <span class="command">ls events/upcoming/</span>
+                </div>
+                <div class="output pl-6 space-y-4">
+                  <!-- wp:shortcode -->
+                  [wp_events count="3"]
+                  <!-- /wp:shortcode -->
+                </div>
+              </div>
+
               <!-- Resize corner -->
               <div class="resize-corner"></div>
             </div>
@@ -1601,10 +1638,13 @@
     <button onclick="toggleTerminal('linksTerminal')" class="dock-item" title="Quick Links">
       <div class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center text-white text-sm">🔗</div>
     </button>
-    
+    <button onclick="toggleTerminal('eventsTerminal')" class="dock-item" title="Upcoming Events">
+      <div class="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center text-white text-sm">📅</div>
+    </button>
+
     <!-- Separator -->
     <div class="w-px h-8 bg-gray-600 mx-1"></div>
-    
+
     <!-- Hidden by default terminals -->
     <button onclick="toggleTerminal('statusTerminal')" class="dock-item" title="Status Terminal">
       <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center text-white text-sm">📊</div>

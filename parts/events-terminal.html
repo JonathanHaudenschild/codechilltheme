@@ -1,0 +1,62 @@
+<!-- wp:group {"className":"terminal-window macos-style rounded-xl shadow-2xl backdrop-blur-xl border transition-all duration-500"} -->
+<div class="wp-block-group terminal-window macos-style rounded-xl shadow-2xl backdrop-blur-xl border transition-all duration-500">
+  <!-- wp:group {"className":"terminal-header flex items-center justify-between p-4 border-b"} -->
+  <div class="wp-block-group terminal-header flex items-center justify-between p-4 border-b">
+    <!-- wp:html -->
+    <div class="terminal-controls flex space-x-2">
+      <div class="control-dot close-dot"></div>
+      <div class="control-dot minimize-dot"></div>
+      <div class="control-dot maximize-dot"></div>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:paragraph {"className":"terminal-title font-mono text-sm opacity-80"} -->
+    <p class="terminal-title font-mono text-sm opacity-80">Events Console</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:html -->
+    <div class="w-16"></div>
+    <!-- /wp:html -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"className":"terminal-content p-6 font-mono text-sm h-full w-full overflow-auto"} -->
+  <div class="wp-block-group terminal-content p-6 font-mono text-sm h-full w-full overflow-auto">
+    <!-- wp:html -->
+    <div class="command-line flex items-center space-x-2 mb-4">
+      <span class="prompt text-cyan-400">developer@codechillclub:~$</span>
+      <span class="command text-yellow-400">ls events/upcoming/</span>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:heading {"level":2,"className":"text-2xl md:text-3xl font-bold mb-4 text-white"} -->
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Upcoming Events</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:shortcode -->
+    [wp_events count="5"]
+    <!-- /wp:shortcode -->
+
+    <!-- wp:spacer {"height":"32px"} -->
+    <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:html -->
+    <div class="command-line flex items-center space-x-2 mb-4">
+      <span class="prompt text-cyan-400">developer@codechillclub:~$</span>
+      <span class="command text-yellow-400">cat events/meetup.rss</span>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:heading {"level":2,"className":"text-2xl md:text-3xl font-bold mb-4 text-white"} -->
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">From Meetup.com</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:shortcode -->
+    [meetup_upcoming group="codeandchillclub" count="3"]
+    <!-- /wp:shortcode -->
+  </div>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Studio-Quality Typography */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Professional Color System */
 :root {
@@ -20,26 +20,45 @@
 
 /* Base Typography */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-feature-settings: 'cv01', 'cv03', 'cv04', 'cv11';
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-feature-settings: "cv01", "cv03", "cv04", "cv11";
   letter-spacing: -0.01em;
 }
 
 /* Studio-Grade Animations */
 @keyframes subtle-float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-4px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes gentle-fade {
-  0% { opacity: 0; transform: translateY(8px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Professional Spacing System */
-.space-section { padding: clamp(4rem, 8vw, 8rem) 0; }
-.space-container { padding: 0 clamp(1.5rem, 4vw, 6rem); }
-.space-content { max-width: min(1400px, 90vw); margin: 0 auto; }
+.space-section {
+  padding: clamp(4rem, 8vw, 8rem) 0;
+}
+.space-container {
+  padding: 0 clamp(1.5rem, 4vw, 6rem);
+}
+.space-content {
+  max-width: min(1400px, 90vw);
+  margin: 0 auto;
+}
 
 /* Award-Winning Logo System */
 .logo-masterpiece {
@@ -47,7 +66,9 @@ body {
   transform-style: preserve-3d;
 }
 
-.logo-line-1, .logo-line-2, .logo-line-3 {
+.logo-line-1,
+.logo-line-2,
+.logo-line-3 {
   transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -102,8 +123,14 @@ body {
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Reveal Effect for "hill" */
@@ -125,7 +152,9 @@ body {
 }
 
 /* Enhanced Letter Interactions */
-.letter-paren, .letter-bracket, .letter-brace {
+.letter-paren,
+.letter-bracket,
+.letter-brace {
   display: inline-block;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
@@ -167,17 +196,14 @@ body {
 
 .cta-button {
   transform-style: preserve-3d;
-  box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.3),
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cta-button:hover {
   transform: scale(1.05) rotateX(2deg) rotateY(-2deg);
-  box-shadow: 
-    0 20px 60px rgba(34, 211, 238, 0.4),
-    0 0 40px rgba(34, 211, 238, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 60px rgba(34, 211, 238, 0.4),
+    0 0 40px rgba(34, 211, 238, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* Button text animation */
@@ -191,7 +217,8 @@ body {
   perspective: 500px;
 }
 
-.arrow-1, .arrow-2 {
+.arrow-1,
+.arrow-2 {
   transform-style: preserve-3d;
 }
 
@@ -239,24 +266,28 @@ body {
 }
 
 /* Enhanced Terminal Windows */
-.terminal-window, .event-terminal {
+.terminal-window,
+.event-terminal {
   background: linear-gradient(145deg, #262626, #1f1f1f);
-  box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.3),
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.terminal-window:hover, .event-terminal:hover {
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    0 0 30px rgba(6, 182, 212, 0.1);
+.terminal-window:hover,
+.event-terminal:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(6, 182, 212, 0.1);
 }
 
 /* Gradient Text Effects */
 @keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* JSON Syntax Highlighting */
@@ -282,23 +313,28 @@ body {
 
 /* Responsive sizing */
 @media (max-width: 768px) {
-  .terminal-window, .event-terminal {
+  .terminal-window,
+  .event-terminal {
     padding: 0.75rem;
     width: calc(100% - 32px) !important;
     margin: 0 16px 16px 16px !important;
   }
-  
+
   .logo-text h1 {
     font-size: clamp(3rem, 12vw, 5rem) !important;
   }
-  
+
   .typing-text {
     animation: typeWriter 2s steps(4) forwards;
   }
-  
+
   @keyframes typeWriter {
-    from { width: 0; }
-    to { width: 4ch; }
+    from {
+      width: 0;
+    }
+    to {
+      width: 4ch;
+    }
   }
 }
 
@@ -362,11 +398,11 @@ body {
   .text-6xl {
     font-size: 3rem;
   }
-  
+
   .text-8xl {
     font-size: 4rem;
   }
-  
+
   .floating-particle {
     display: none; /* Hide particles on mobile for performance */
   }
@@ -386,7 +422,9 @@ body {
 /* Cursor states not needed - using normal browser cursors */
 
 /* Professional Interactive Elements */
-a, button, .wp-block-button__link {
+a,
+button,
+.wp-block-button__link {
   position: relative;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -547,7 +585,7 @@ html {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  
+
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -577,7 +615,7 @@ html {
     opacity: 1 !important;
     animation: none !important;
   }
-  
+
   /* Mobile container - simple vertical stack */
   .relative.w-full {
     display: block !important;
@@ -585,32 +623,32 @@ html {
     height: auto !important;
     min-height: auto !important;
   }
-  
+
   /* Remove all WordPress default padding on mobile */
   .wp-block-group {
     padding: 0 !important;
     margin: 0 !important;
   }
-  
+
   /* Mobile logo - hero section */
   #logoTerminal {
     width: calc(100% - 32px) !important;
     margin: 0 16px 24px 16px !important;
     background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
   }
-  
+
   .logo-text {
     font-size: clamp(2rem, 8vw, 3rem) !important;
     line-height: 1.2 !important;
   }
-  
+
   /* Hide non-essential terminals and dock on mobile - keep legal pages visible */
   #statusTerminal,
   #settingsTerminal,
   #terminalDock {
     display: none !important;
   }
-  
+
   /* Legal terminals visible on mobile with proper styling */
   #impressumTerminal,
   #privacyTerminal {
@@ -627,14 +665,14 @@ html {
     animation: none !important;
     display: block !important;
   }
-  
+
   /* Mobile terminal headers - simplified */
   .terminal-header {
     padding: 12px 16px !important;
     height: auto !important;
     border-radius: 12px 12px 0 0 !important;
   }
-  
+
   /* Mobile terminal content - card-like */
   .terminal-content {
     height: auto !important;
@@ -644,55 +682,55 @@ html {
     line-height: 1.5 !important;
     border-radius: 0 0 12px 12px !important;
   }
-  
+
   /* Mobile terminal title - larger and clearer */
   .terminal-title {
     font-size: 16px !important;
     font-weight: 600 !important;
     margin: 0 !important;
   }
-  
+
   /* Remove window controls on mobile - they're not needed */
   .terminal-controls {
     display: none !important;
   }
-  
+
   /* Mobile video section */
   #videoBrowserWindow {
     width: calc(100% - 32px) !important;
     margin: 0 16px 24px 16px !important;
   }
-  
+
   #videoBrowserWindow .terminal-content {
     padding: 0 !important;
     height: 200px !important;
   }
-  
+
   /* Mobile interactive terminal */
   #mainTerminal {
     background: linear-gradient(135deg, #134e4a 0%, #064e3b 100%) !important;
   }
-  
+
   /* Mobile about section */
   #aboutTerminal {
     background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
   }
-  
+
   /* Mobile links section */
   #linksTerminal {
     background: linear-gradient(135deg, #7c2d12 0%, #581c87 100%) !important;
   }
-  
+
   /* Mobile typography improvements */
   .command-line {
     margin: 8px 0 !important;
   }
-  
+
   .output {
     margin: 4px 0 !important;
     line-height: 1.6 !important;
   }
-  
+
   /* Mobile input styling */
   .terminal-input {
     font-size: 16px !important;
@@ -700,7 +738,7 @@ html {
     border-radius: 6px !important;
     background: rgba(255, 255, 255, 0.1) !important;
   }
-  
+
   /* Mobile command output */
   .command-output-area {
     max-height: 300px !important;
@@ -708,7 +746,7 @@ html {
     border-radius: 8px !important;
     background: rgba(0, 0, 0, 0.2) !important;
   }
-  
+
   /* Mobile link styling */
   .terminal-content a,
   .terminal-content [onclick] {
@@ -720,32 +758,32 @@ html {
     text-decoration: none !important;
     transition: all 0.2s ease !important;
   }
-  
+
   .terminal-content a:hover,
   .terminal-content [onclick]:hover {
     background: rgba(255, 255, 255, 0.2) !important;
     transform: translateY(-1px) !important;
   }
-  
+
   /* Mobile performance optimizations */
   body {
     overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch !important;
   }
-  
+
   /* Hide decorative elements */
   .floating-particle,
   .resize-corner,
   .drag-handle {
     display: none !important;
   }
-  
+
   /* Mobile touch optimizations */
   * {
     -webkit-tap-highlight-color: transparent !important;
     touch-action: manipulation !important;
   }
-  
+
   /* Mobile scroll optimization */
   .terminal-content {
     -webkit-overflow-scrolling: touch !important;
@@ -759,11 +797,11 @@ html {
     width: 350px !important;
     height: 280px !important;
   }
-  
+
   .terminal-content {
     font-size: 13px !important;
   }
-  
+
   /* Tablet layout - reduce window count */
   #statusTerminal {
     display: none !important;
@@ -851,10 +889,15 @@ html {
 
 /* Dock bounce animation */
 @keyframes dockBounce {
-  0%, 20%, 53%, 80%, 100% {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
     transform: translateY(0px);
   }
-  40%, 43% {
+  40%,
+  43% {
     transform: translateY(-4px);
   }
   70% {
@@ -881,7 +924,8 @@ html {
 }
 
 /* Container Height Fixes */
-html, body {
+html,
+body {
   height: 100vh !important;
   min-height: 100vh !important;
   width: 100% !important;
@@ -971,7 +1015,11 @@ html, body {
 }
 
 .macos-style .terminal-header {
-  background: linear-gradient(180deg, rgba(40, 40, 40, 0.9) 0%, rgba(30, 30, 30, 0.9) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 40, 40, 0.9) 0%,
+    rgba(30, 30, 30, 0.9) 100%
+  );
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px 12px 0 0;
 }
@@ -984,9 +1032,15 @@ html, body {
   cursor: pointer;
 }
 
-.macos-style .close-dot { background: #ff5f57; }
-.macos-style .minimize-dot { background: #ffbd2e; }
-.macos-style .maximize-dot { background: #28ca42; }
+.macos-style .close-dot {
+  background: #ff5f57;
+}
+.macos-style .minimize-dot {
+  background: #ffbd2e;
+}
+.macos-style .maximize-dot {
+  background: #28ca42;
+}
 
 .macos-style .control-dot:hover {
   transform: scale(1.1);
@@ -1031,13 +1085,13 @@ html, body {
   margin-right: 8px;
 }
 
-.ubuntu-style .close-dot { 
+.ubuntu-style .close-dot {
   background: #ff5f56;
 }
-.ubuntu-style .minimize-dot { 
+.ubuntu-style .minimize-dot {
   background: #ffbd2e;
 }
-.ubuntu-style .maximize-dot { 
+.ubuntu-style .maximize-dot {
   background: #27ca3f;
 }
 
@@ -1061,7 +1115,7 @@ html, body {
 .ubuntu-style .terminal-title {
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 13px;
   flex: 1;
   text-align: center;
@@ -1071,7 +1125,7 @@ html, body {
 .ubuntu-style .terminal-content {
   background: #300a24;
   color: #ffffff;
-  font-family: 'Ubuntu Mono', 'Courier New', monospace;
+  font-family: "Ubuntu Mono", "Courier New", monospace;
   font-size: 13px;
   line-height: 1.3;
   padding: 12px 16px;
@@ -1148,7 +1202,7 @@ html, body {
 
 /* Windows control icons using CSS instead of Unicode */
 .windows-style .minimize-dot::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 1px;
   background: #ffffff;
@@ -1157,7 +1211,7 @@ html, body {
 }
 
 .windows-style .maximize-dot::after {
-  content: '';
+  content: "";
   width: 9px;
   height: 9px;
   border: 1px solid #ffffff;
@@ -1167,8 +1221,8 @@ html, body {
 }
 
 .windows-style .close-dot::before {
-  content: '×';
-  font-family: 'Segoe UI', sans-serif;
+  content: "×";
+  font-family: "Segoe UI", sans-serif;
   color: #ffffff;
   font-size: 14px;
   font-weight: normal;
@@ -1203,7 +1257,7 @@ html, body {
 .windows-style .terminal-title {
   color: #cccccc;
   font-weight: 400;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 13px;
   flex: 1;
   text-align: center;
@@ -1213,7 +1267,8 @@ html, body {
 .windows-style .terminal-content {
   background: #0c0c0c;
   color: #cccccc;
-  font-family: 'Cascadia Code', 'Cascadia Mono', 'Consolas', 'Courier New', monospace;
+  font-family: "Cascadia Code", "Cascadia Mono", "Consolas", "Courier New",
+    monospace;
   font-size: 14px;
   line-height: 1.4;
   padding: 12px 16px;
@@ -1288,7 +1343,17 @@ html, body {
   right: 0px;
   width: 16px;
   height: 16px;
-  background: linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.2) 30%, rgba(255,255,255,0.2) 40%, transparent 40%, transparent 60%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0.2) 70%, transparent 70%);
+  background: linear-gradient(
+    -45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.2) 30%,
+    rgba(255, 255, 255, 0.2) 40%,
+    transparent 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.2) 60%,
+    rgba(255, 255, 255, 0.2) 70%,
+    transparent 70%
+  );
   cursor: se-resize !important;
   pointer-events: auto;
   z-index: 10000;
@@ -1296,7 +1361,17 @@ html, body {
 }
 
 .resize-corner:hover {
-  background: linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 40%, transparent 40%, transparent 60%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.4) 70%, transparent 70%);
+  background: linear-gradient(
+    -45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.4) 30%,
+    rgba(255, 255, 255, 0.4) 40%,
+    transparent 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.4) 60%,
+    rgba(255, 255, 255, 0.4) 70%,
+    transparent 70%
+  );
 }
 
 /* Simple resize cursor handling */
@@ -1325,8 +1400,6 @@ body.resizing * {
   width: 360px;
 }
 
-
-
 #statusTerminal {
   position: fixed;
   top: calc(50vh - 160px);
@@ -1354,6 +1427,13 @@ body.resizing * {
   top: calc(100vh - 320px - 2vh);
   left: 2vw;
   width: 300px;
+}
+
+#eventsTerminal {
+  position: fixed;
+  top: calc(50vh - 80px);
+  left: calc(50vw - 230px);
+  width: 500px;
 }
 
 #videoBrowserWindow {
@@ -1385,7 +1465,7 @@ body.resizing * {
 /* New terminal windows */
 #logoTerminal {
   position: absolute;
-  top: calc(50vh - 200px);
+  top: calc(50vh - 420px);
   left: calc(50vw - 250px);
   width: 500px;
 }
@@ -1457,9 +1537,18 @@ body.resizing * {
   font-weight: bold;
 }
 
-.bracket-1 { color: #00d2ef !important; font-weight: bold !important; }
-.bracket-2 { color: #ff0080 !important; font-weight: bold !important; }
-.bracket-3 { color: #ffed00 !important; font-weight: bold !important; }
+.bracket-1 {
+  color: #00d2ef !important;
+  font-weight: bold !important;
+}
+.bracket-2 {
+  color: #ff0080 !important;
+  font-weight: bold !important;
+}
+.bracket-3 {
+  color: #ffed00 !important;
+  font-weight: bold !important;
+}
 
 /* Interactive Terminal Input */
 .terminal-input {
@@ -1467,7 +1556,7 @@ body.resizing * {
   border: none;
   outline: none;
   color: white;
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-family: "JetBrains Mono", "Courier New", monospace;
   font-size: 0.875rem;
   flex: 1;
   caret-color: #22d3ee;
@@ -1507,13 +1596,13 @@ body.resizing * {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   .cursor,
   .cursor-follower,
   .cursor-trail {
     display: none;
   }
-  
+
   html {
     scroll-behavior: auto;
   }
@@ -1524,13 +1613,14 @@ body.resizing * {
   * {
     max-width: 100vw !important;
   }
-  
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden !important;
     width: 100% !important;
     max-width: 100vw !important;
   }
-  
+
   .wp-block-group,
   .relative.min-h-screen,
   .relative.w-full {
@@ -1538,22 +1628,22 @@ body.resizing * {
     width: 100% !important;
     max-width: 100vw !important;
   }
-  
+
   /* Prevent fixed positioned elements from causing overflow */
   .terminal-window {
     max-width: calc(100vw - 32px) !important;
   }
-  
+
   /* Hide command prompts on mobile - too wide for small screens */
   .prompt {
     display: none !important;
   }
-  
+
   /* Adjust command line spacing when prompt is hidden */
   .command-line {
     padding-left: 0 !important;
   }
-  
+
   /* Add top margin to logo terminal on mobile for better spacing */
   #logoTerminal {
     margin-top: 24px !important;

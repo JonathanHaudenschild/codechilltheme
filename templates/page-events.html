@@ -1,0 +1,29 @@
+<!--
+  Block template for Pages: Events
+  Appears as a selectable template for pages.
+-->
+
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"className":"min-h-screen bg-slate-950 text-white"} -->
+<div class="wp-block-group min-h-screen bg-slate-950 text-white">
+  <!-- wp:group {"layout":{"type":"constrained"},"className":"container-prose py-16"} -->
+  <div class="wp-block-group container-prose py-16">
+    <!-- wp:heading {"level":1,"className":"text-3xl md:text-4xl font-bold mb-6"} -->
+    <h1 class="text-3xl md:text-4xl font-bold mb-6">Events</h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:template-part {"slug":"events-terminal","tagName":"section"} /-->
+
+    <!-- wp:spacer {"height":"32px"} -->
+    <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- Page Content (supports shortcodes) -->
+    <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+</div>
+<!-- /wp:group -->
